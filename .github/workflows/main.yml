@@ -51,6 +51,7 @@ jobs:
         with:
           context: ./
           file: ./Dockerfile
+          builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ks7000/simplewhaledemo:latest
           
