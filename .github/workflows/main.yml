@@ -52,6 +52,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GHCR_TOKEN }}
+          logout: false
             
       - name: Build and Push
         id: docker_build
